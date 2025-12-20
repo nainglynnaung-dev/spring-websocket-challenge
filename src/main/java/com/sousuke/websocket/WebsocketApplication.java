@@ -10,10 +10,9 @@ public class WebsocketApplication {
 
 
     @Bean
-    public ApplicationRunner hello(){
-        return args ->
-        {
-            System.out.println("How are you");
+    public ApplicationRunner run(){
+        return r->{
+            System.out.println("how are you");
         };
     }
 
