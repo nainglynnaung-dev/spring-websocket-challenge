@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Web Socket Tutorial</title>
+    <script src="https://cdn.jsdelivr.net/npm/@stomp/stompjs@7.2.0/bundles/stomp.umd.min.js"></script>
+    <script src="main.js"></script>
+<!--    <style>-->
+<!--        body {-->
+<!--            font-family: Arial, sans-serif;-->
+<!--            background: #f4f6f9;-->
+<!--            margin: 0;-->
+<!--            padding: 20px;-->
+<!--            color: #333;-->
+<!--        }-->
+
+<!--        h1 {-->
+<!--            text-align: center;-->
+<!--            color: #2c3e50;-->
+<!--            margin-bottom: 30px;-->
+<!--        }-->
+
+<!--        input[type="button"] {-->
+<!--            background-color: #3498db;-->
+<!--            border: none;-->
+<!--            color: white;-->
+<!--            padding: 10px 20px;-->
+<!--            margin: 5px;-->
+<!--            border-radius: 5px;-->
+<!--            cursor: pointer;-->
+<!--            font-size: 14px;-->
+<!--            transition: background-color 0.3s ease;-->
+<!--        }-->
+
+<!--        input[type="button"]:hover {-->
+<!--            background-color: #2980b9;-->
+<!--        }-->
+
+<!--        #connection {-->
+<!--            font-weight: bold;-->
+<!--            color: #27ae60;-->
+<!--        }-->
+
+<!--        #messages {-->
+<!--            display: block;-->
+<!--            margin-top: 15px;-->
+<!--            padding: 10px;-->
+<!--            background: #ecf0f1;-->
+<!--            border: 1px solid #ccc;-->
+<!--            border-radius: 5px;-->
+<!--            min-height: 50px;-->
+<!--            max-height: 200px;-->
+<!--            overflow-y: auto;-->
+<!--        }-->
+
+<!--        p {-->
+<!--            margin: 10px 0;-->
+<!--        }-->
+<!--    </style>-->
+</head>
+
+<body>
+<h1>Spring Boot Tutorial</h1>
+<label for="sessionId">SessionId: </label><input type="text" name="" id="sessionId" placeholder="Enter Session Id..">
+<input type="button" id="connect" value="Connect" onclick="connect()">
+<input type="button" id="disconnect" value="Disconnect" onclick="disconnect()"><br/><br/>
+<input type="button" id="sendMessage" value="Send Message" onclick="sendMessage()">
+<input type="button" id="sentPrivateMessage" value="Send Private Message" onclick="sendPrivateMessage()">
+<input type="button" id="clearMessage" value="Clear Message" onclick="clearMessage(messages)">
+<p><span id="connection"></span></p>
+<p>Messages <span id="messages"></span></p>
+
+</body>
+</html>
