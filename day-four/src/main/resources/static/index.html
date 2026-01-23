@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--suppress JSUnresolvedLibraryURL -->
+<html lang="nl">
+<head>
+    <title>Hello Spring Boot Tutorial</title>
+    <script src="https://cdn.jsdelivr.net/npm/@stomp/stompjs@7.2.0/bundles/stomp.umd.min.js"></script>
+    <script src="/main.js"></script>
+</head>
+<body>
+<h1>Spring Boot Tutorial</h1>
+<label for="sessionId">SessionId: </label><input type="text" id="sessionId" placeholder="Send to SessionId here..." size="50" onfocus=this.value='' /><br/><br/>
+<input id="connect" type="button" onclick="connect()" value="Connect" />
+<input id="disconnect" type="button" onclick="disconnect()" value="Disconnect" /><br/><br/>
+<input id="sendMessage" type="button" onclick="sendMessage()" value="Send Messages" />
+<input id="sendPrivateMessage" type="button" onclick="sendPrivateMessage()" value="Send Private Messages" />
+<input id="clearMessages" type="button" onclick="clearMessage(messages)" value="Clear Messages" />
+<hr/>
+<label for="roomIdInput">Room Id: </label><input type="text" id="roomIdInput" placeholder="Subscribe to Room Id..." size="50" onfocus=this.value='' /><br/><br/>
+<input id="subscribeRoom" type="button" onclick="subscribeRoomId()" value="Subscribe Room" />
+<input id="unSubscribeRoom" type="button" onclick="unSubscribeRoom()" value="UnSubscribe Room" /><br/><br/>
+<input id="sendMessageToRoomId" type="button" onclick="sendMessageToRoomId(roomId)" value="Send Message To RoomId" />
+<hr/>
+<p><span  id="connection"></span></p>
+<p><span  id="connectionToRoom"></span></p>
+<hr/>
+<p>Messages:<br/> <span  id="messages"></span></p>
+</body>
+</html>
